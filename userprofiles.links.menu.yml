@@ -11,3 +11,16 @@ private_profile.admin.structure.settings:
   description: 'Configure Private Profile entities'
   route_name: private_profile.settings
   parent: system.admin_structure
+# Public Profile menu items definition
+entity.public_profile.collection:
+  title: 'Public Profile list'
+  route_name: entity.public_profile.collection
+  description: 'List Public Profile entities'
+  parent: system.admin_structure
+  weight: 100
+
+public_profile.admin.structure.settings:
+  title: Public Profile settings
+  description: 'Configure Public Profile entities'
+  route_name: public_profile.settings
+  parent: system.admin_structure

@@ -19,4 +19,22 @@ view unpublished private profile entities:
   title: 'View unpublished Private Profile entities'
 
 access content add profile:
-  title: 'Access the profile create form'
+  title: 'Access the profile create form'add public profile entities:
+  title: 'Create new Public Profile entities'
+
+administer public profile entities:
+  title: 'Administer Public Profile entities'
+  description: 'Allow to access the administration form to configure Public Profile entities.'
+  restrict access: true
+
+delete public profile entities:
+  title: 'Delete Public Profile entities'
+
+edit public profile entities:
+  title: 'Edit Public Profile entities'
+
+view published public profile entities:
+  title: 'View published Public Profile entities'
+
+view unpublished public profile entities:
+  title: 'View unpublished Public Profile entities'
