@@ -1,0 +1,5 @@
+entity.private_profile.add_form:
+  route_name: entity.private_profile.add_form
+  title: 'Add Private Profile'
+  appears_on:
+    - entity.private_profile.collection

@@ -1,0 +1,8 @@
+# for create page
+eventcreator.create:
+  path: '/profile/create'
+  defaults:
+    _title: 'Create Profile'
+    _form: '\Drupal\userprofiles\Form\ProfileCreateForm'
+  requirements:
+    _permission: 'access content add profile'
