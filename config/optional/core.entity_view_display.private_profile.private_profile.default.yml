@@ -1,0 +1,91 @@
+uuid: e151ae1a-6744-4110-82a0-5fe78bac307d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.private_profile.private_profile.field_address
+    - field.field.private_profile.private_profile.field_certifications
+    - field.field.private_profile.private_profile.field_dob
+    - field.field.private_profile.private_profile.field_firstname
+    - field.field.private_profile.private_profile.field_homephone
+    - field.field.private_profile.private_profile.field_lastname
+    - field.field.private_profile.private_profile.field_mobile
+    - field.field.private_profile.private_profile.field_role
+  module:
+    - user
+    - userprofiles
+id: private_profile.private_profile.default
+targetEntityType: private_profile
+bundle: private_profile
+mode: default
+content:
+  field_address:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_certifications:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_dob:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_firstname:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_homephone:
+    weight: 6
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_lastname:
+    weight: 7
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_mobile:
+    weight: 8
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_role:
+    weight: 9
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  name:
+    label: above
+    type: string
+    weight: -4
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  user_id:
+    label: hidden
+    type: author
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

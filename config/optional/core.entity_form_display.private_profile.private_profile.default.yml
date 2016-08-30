@@ -1,0 +1,97 @@
+uuid: f4bb18d0-a87b-4439-9328-db1503e44e7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.private_profile.private_profile.field_address
+    - field.field.private_profile.private_profile.field_certifications
+    - field.field.private_profile.private_profile.field_dob
+    - field.field.private_profile.private_profile.field_firstname
+    - field.field.private_profile.private_profile.field_homephone
+    - field.field.private_profile.private_profile.field_lastname
+    - field.field.private_profile.private_profile.field_mobile
+    - field.field.private_profile.private_profile.field_role
+  module:
+    - userprofiles
+id: private_profile.private_profile.default
+targetEntityType: private_profile
+bundle: private_profile
+mode: default
+content:
+  field_address:
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_certifications:
+    weight: 12
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_dob:
+    weight: 13
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_firstname:
+    weight: 14
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_homephone:
+    weight: 16
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_lastname:
+    weight: 17
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_mobile:
+    weight: 18
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_role:
+    weight: 19
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  langcode:
+    type: language_select
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  user_id:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

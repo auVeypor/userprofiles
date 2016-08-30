@@ -1,0 +1,21 @@
+uuid: 6e111802-f8d2-4413-a379-57307734eb36
+langcode: en
+status: true
+dependencies:
+  module:
+    - userprofiles
+id: public_profile.field_address
+field_name: field_address
+entity_type: public_profile
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

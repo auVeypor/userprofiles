@@ -1,0 +1,20 @@
+uuid: 28e7e478-36b3-4b05-a1bf-a2a782e143bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.private_profile.field_address
+  module:
+    - userprofiles
+id: private_profile.private_profile.field_address
+field_name: field_address
+entity_type: private_profile
+bundle: private_profile
+label: Address
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
