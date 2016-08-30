@@ -21,6 +21,9 @@ view unpublished private profile entities:
 access content add profile:
   title: 'Access the profile create form'
 
+access content generate blank entities:
+  title: 'Access the blank entity generation controller'
+
 add public profile entities:
   title: 'Create new Public Profile entities'
 
@@ -40,3 +43,5 @@ view published public profile entities:
 
 view unpublished public profile entities:
   title: 'View unpublished Public Profile entities'
+
+

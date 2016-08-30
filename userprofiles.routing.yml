@@ -1,8 +1,16 @@
 # for create page
-eventcreator.create:
+userprofiles.create:
   path: '/profile/create'
   defaults:
     _title: 'Create Profile'
     _form: '\Drupal\userprofiles\Form\ProfileCreateForm'
   requirements:
     _permission: 'access content add profile'
+
+userprofiles.genblank:
+  path: 'admin/people/profile/genblank'
+  defaults:
+    _title: 'Generate blank entites'
+    _controller: '\Drupal\userprofiles\Controller\BlankController::genblank'
+  requirements:
+    _permission: 'access content generate blank entities'
