@@ -1,0 +1,24 @@
+uuid: 921b854e-5e3f-4ffd-ac09-0513c3c67288
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.public_profile.field_homephone_state
+  module:
+    - userprofiles
+id: public_profile.public_profile.field_homephone_state
+field_name: field_homephone_state
+entity_type: public_profile
+bundle: public_profile
+label: 'Home Number State'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

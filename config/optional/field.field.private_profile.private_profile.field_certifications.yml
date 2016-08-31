@@ -6,6 +6,8 @@ dependencies:
     - field.storage.private_profile.field_certifications
   module:
     - userprofiles
+_core:
+  default_config_hash: Cwdd8PBEiK4ocBbqC7gD1O2YThrRB5ijM-xWp_Zu5Y0
 id: private_profile.private_profile.field_certifications
 field_name: field_certifications
 entity_type: private_profile

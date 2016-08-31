@@ -1,0 +1,24 @@
+uuid: fead614c-c452-444b-80b7-0a077259cb60
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.public_profile.field_dob_state
+  module:
+    - userprofiles
+id: public_profile.public_profile.field_dob_state
+field_name: field_dob_state
+entity_type: public_profile
+bundle: public_profile
+label: 'Date Of Birth State'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

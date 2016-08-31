@@ -1,0 +1,24 @@
+uuid: f45af3bd-91fc-4c06-b195-7dbcc0a16f3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.public_profile.field_mobile_state
+  module:
+    - userprofiles
+id: public_profile.public_profile.field_mobile_state
+field_name: field_mobile_state
+entity_type: public_profile
+bundle: public_profile
+label: 'Mobile Number State'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

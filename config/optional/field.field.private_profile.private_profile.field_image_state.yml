@@ -1,0 +1,24 @@
+uuid: ff1f09cf-a775-47f3-a3dc-c07edc11ef3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.private_profile.field_image_state
+  module:
+    - userprofiles
+id: private_profile.private_profile.field_image_state
+field_name: field_image_state
+entity_type: private_profile
+bundle: private_profile
+label: 'Image State'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

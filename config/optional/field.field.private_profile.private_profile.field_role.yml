@@ -6,6 +6,8 @@ dependencies:
     - field.storage.private_profile.field_role
   module:
     - userprofiles
+_core:
+  default_config_hash: P8JSEaoV_WHZmpJKIyN0ssp7i1qsSyIL4qBXSvRkhdk
 id: private_profile.private_profile.field_role
 field_name: field_role
 entity_type: private_profile

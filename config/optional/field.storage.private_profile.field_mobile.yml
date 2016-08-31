@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - userprofiles
+_core:
+  default_config_hash: LVfJncuvE6ow6zl91wPE5jxKhglUOCgnod_BvomeAqY
 id: private_profile.field_mobile
 field_name: field_mobile
 entity_type: private_profile

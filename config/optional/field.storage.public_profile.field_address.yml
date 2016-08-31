@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - userprofiles
+_core:
+  default_config_hash: dg2rrgV2Q4d2F9QaxEmrcvyFj1_TL2G0l6mmzqj936k
 id: public_profile.field_address
 field_name: field_address
 entity_type: public_profile

@@ -1,0 +1,18 @@
+uuid: 4974939c-2225-4d22-b645-eedb7c730eb2
+langcode: en
+status: true
+dependencies:
+  module:
+    - userprofiles
+id: private_profile.field_image_state
+field_name: field_image_state
+entity_type: private_profile
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

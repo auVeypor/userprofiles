@@ -1,0 +1,24 @@
+uuid: d5fd00a1-5481-4830-9efa-434d36892518
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.private_profile.field_firstname_state
+  module:
+    - userprofiles
+id: private_profile.private_profile.field_firstname_state
+field_name: field_firstname_state
+entity_type: private_profile
+bundle: private_profile
+label: 'First Name State'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

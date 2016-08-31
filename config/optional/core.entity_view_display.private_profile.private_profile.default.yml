@@ -4,16 +4,27 @@ status: true
 dependencies:
   config:
     - field.field.private_profile.private_profile.field_address
+    - field.field.private_profile.private_profile.field_address_state
     - field.field.private_profile.private_profile.field_certifications
+    - field.field.private_profile.private_profile.field_certifications_state
     - field.field.private_profile.private_profile.field_dob
+    - field.field.private_profile.private_profile.field_dob_state
     - field.field.private_profile.private_profile.field_firstname
+    - field.field.private_profile.private_profile.field_firstname_state
     - field.field.private_profile.private_profile.field_homephone
+    - field.field.private_profile.private_profile.field_homephone_state
+    - field.field.private_profile.private_profile.field_image_state
     - field.field.private_profile.private_profile.field_lastname
+    - field.field.private_profile.private_profile.field_lastname_state
     - field.field.private_profile.private_profile.field_mobile
+    - field.field.private_profile.private_profile.field_mobile_state
     - field.field.private_profile.private_profile.field_role
+    - field.field.private_profile.private_profile.field_role_state
   module:
     - user
     - userprofiles
+_core:
+  default_config_hash: rp0o99ujDxFB5Xw89CsRd8JLXZZ91QKv1IqT-bFZihs
 id: private_profile.private_profile.default
 targetEntityType: private_profile
 bundle: private_profile
@@ -26,6 +37,15 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+  field_address_state:
+    weight: 10
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
   field_certifications:
     weight: 2
     label: above
@@ -33,6 +53,15 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+  field_certifications_state:
+    weight: 11
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
   field_dob:
     weight: 3
     label: above
@@ -40,6 +69,15 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+  field_dob_state:
+    weight: 12
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
   field_firstname:
     weight: 4
     label: above
@@ -47,6 +85,15 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+  field_firstname_state:
+    weight: 13
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
   field_homephone:
     weight: 6
     label: above
@@ -54,6 +101,24 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+  field_homephone_state:
+    weight: 14
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+  field_image_state:
+    weight: 18
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
   field_lastname:
     weight: 7
     label: above
@@ -61,6 +126,15 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+  field_lastname_state:
+    weight: 15
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
   field_mobile:
     weight: 8
     label: above
@@ -68,6 +142,15 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+  field_mobile_state:
+    weight: 16
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
   field_role:
     weight: 9
     label: above
@@ -75,6 +158,15 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+  field_role_state:
+    weight: 17
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
   name:
     label: above
     type: string

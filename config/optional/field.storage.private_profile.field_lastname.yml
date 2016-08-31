@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - userprofiles
+_core:
+  default_config_hash: mflS8tE2XUFoXo95UmYHr479vIgDU0WYe25Rlu0IOyI
 id: private_profile.field_lastname
 field_name: field_lastname
 entity_type: private_profile

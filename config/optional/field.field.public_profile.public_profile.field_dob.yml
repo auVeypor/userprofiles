@@ -6,6 +6,8 @@ dependencies:
     - field.storage.public_profile.field_dob
   module:
     - userprofiles
+_core:
+  default_config_hash: Oa_0uQ2vYkh0iHyIzD88mmJSueaPXn7-JQDoWL7GKYM
 id: public_profile.public_profile.field_dob
 field_name: field_dob
 entity_type: public_profile

@@ -6,6 +6,8 @@ dependencies:
     - field.storage.private_profile.field_address
   module:
     - userprofiles
+_core:
+  default_config_hash: 83DRCCSxr3umEG2FjBf14eEAZGRqPiUkb-1mYyuuZyY
 id: private_profile.private_profile.field_address
 field_name: field_address
 entity_type: private_profile

@@ -1,0 +1,18 @@
+uuid: 47950388-f7bc-4ffb-a0f1-f9114412254c
+langcode: en
+status: true
+dependencies:
+  module:
+    - userprofiles
+id: public_profile.field_address_state
+field_name: field_address_state
+entity_type: public_profile
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -6,6 +6,8 @@ dependencies:
     - field.storage.private_profile.field_homephone
   module:
     - userprofiles
+_core:
+  default_config_hash: wKbiDSszJ3u65lgNaC3l60XZU5fVsgOFxjUsDBcsJkQ
 id: private_profile.private_profile.field_homephone
 field_name: field_homephone
 entity_type: private_profile
