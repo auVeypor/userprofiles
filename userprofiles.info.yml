@@ -1,5 +1,7 @@
 name: UserProfiles
 type: module
-description: My Awesome Module
+description: 'My Awesome Module'
 core: 8.x
 package: Custom
+dependencies:
+    - userprofiles
