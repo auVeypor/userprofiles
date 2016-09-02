@@ -1,19 +1,18 @@
-uuid: 2bedfe8f-1a51-449d-8327-af4085a05ccc
 langcode: en
 status: true
 dependencies:
-  module:
-    - userprofiles
+    module:
+        - userprofiles
 _core:
-  default_config_hash: r9ylLK59EI6Tan1sn54YRaX6EG6DB68V5Z4HG2uAlmQ
+    default_config_hash: K1wtWBsp-aOqoVbtEWusy4uhBw9xVDmk4xKkthLqSZ8
 id: public_profile.field_lastname
 field_name: field_lastname
 entity_type: public_profile
 type: string
 settings:
-  max_length: 255
-  is_ascii: false
-  case_sensitive: false
+    max_length: 255
+    is_ascii: false
+    case_sensitive: false
 module: core
 locked: false
 cardinality: 1
