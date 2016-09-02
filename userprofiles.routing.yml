@@ -13,4 +13,12 @@ userprofiles.genblank:
     _title: 'Generate blank entites'
     _controller: '\Drupal\userprofiles\Controller\BlankController::genblank'
   requirements:
-    _permission: 'access content generate blank entities'
+    _permission: 'access content entity controllers'
+
+userprofiles.removeDeleted:
+  path: 'admin/people/profile/removeDeleted'
+  defaults:
+    _title: 'Delete entites'
+    _controller: '\Drupal\userprofiles\Controller\BlankController::removeDeleted'
+  requirements:
+    _permission: 'access content entity controllers'

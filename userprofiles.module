@@ -6,6 +6,13 @@
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Controller\ControllerBase;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\node\Entity\Node;
+use Drupal\Core\Entity;
+use Drupal\user\Entity\User;
+use Drupal\userprofiles\Entity\PrivateProfile;
+use Drupal\userprofiles\Entity\PublicProfile;
 
 /**
  * Implements hook_help().
@@ -21,4 +28,28 @@ function userprofiles_help($route_name, RouteMatchInterface $route_match) {
 
     default:
   }
+}
+
+/**
+ * Implements hook_cron().
+ */
+function userprofiles_cron() {
+	\Drupal::logger('userprofiles-cron')->error('Running');
+	//load the user list and check last
+	$users = User::loadMultiple();
+	$uids = array_keys($users);
+	$ulastID = end($uids);
+	//load the privates and check last
+	$privates = PrivateProfile::loadMultiple();
+	$ppids = array_keys($privates);
+	$plastID = end($ppids);
+
+	foreach ($ppids as $pid) {
+		if(!(in_array($pid, $uids))) {
+			$priv = PrivateProfile::load($pid);
+			$publ = PublicProfile::load($pid);
+			$priv->delete();
+			$publ->delete();
+		}
+	}
 }
