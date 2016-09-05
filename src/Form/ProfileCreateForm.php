@@ -142,7 +142,6 @@ class ProfileCreateForm extends FormBase {
             '#type' => 'textfield',
             '#title' => $this->t('Certifications'),
             '#default_value' => $private_profile->get('field_certifications')->value,
-            '#multiple' => TRUE
         );
 
         $form['submit'] = array(
