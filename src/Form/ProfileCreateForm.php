@@ -41,7 +41,6 @@ class ProfileCreateForm extends FormBase {
             '#title' => $this->t('First Name'),
             '#default_value' => 'Shannon',
             '#default_value' => $private_profile->get('field_firstname')->value,
-            '#required' => TRUE
         );
 
         $form['lastname-state'] = array(
@@ -54,7 +53,6 @@ class ProfileCreateForm extends FormBase {
             '#title' => $this->t('Last Name'),
             '#default_value' => 'Rothe',
             '#default_value' => $private_profile->get('field_lastname')->value,
-            '#required' => TRUE
         );
 
         $form['dob-state'] = array(
@@ -69,7 +67,6 @@ class ProfileCreateForm extends FormBase {
             '#date_date_format' => 'd/m/Y',
             '#date_time_format' => 'H:i:s A',
             '#default_value' => new DrupalDateTime($private_profile->get('field_dob')->value),
-            '#required' => TRUE
         );
 
         $form['homephone-state'] = array(
@@ -82,7 +79,6 @@ class ProfileCreateForm extends FormBase {
             '#title' => $this->t('Home Phone'),
             '#default_value' => '6372unlikely',
             '#default_value' => $private_profile->get('field_homephone')->value,
-            '#required' => TRUE
         );
 
         $form['mobile-state'] = array(
@@ -95,7 +91,6 @@ class ProfileCreateForm extends FormBase {
             '#title' => $this->t('Mobile Phone'),
             '#default_value' => '04unlikely',
             '#default_value' => $private_profile->get('field_mobile')->value,
-            '#required' => TRUE
         );
 
         $form['role-state'] = array(
@@ -108,7 +103,6 @@ class ProfileCreateForm extends FormBase {
             '#title' => $this->t('Roles'),
             '#default_value' => 'Full Time Sickcunt',
             '#default_value' => $private_profile->get('field_role')->value,
-            '#required' => TRUE
         );
 
         $form['address-state'] = array(
@@ -121,7 +115,6 @@ class ProfileCreateForm extends FormBase {
             '#title' => $this->t('Address'),
             '#default_value' => '8 Darren Drive, Mudgee, NSW, 2850',
             '#default_value' => $private_profile->get('field_address')->value,
-            '#required' => TRUE
         );
 
         $form['certification-state'] = array(
