@@ -6,6 +6,8 @@ dependencies:
     - field.storage.public_profile.field_role_state
   module:
     - userprofiles
+_core:
+  default_config_hash: nKXFvpuPbAsIWRmLdrOMKeFXgUaOoYDMV65GTUcxkQI
 id: public_profile.public_profile.field_role_state
 field_name: field_role_state
 entity_type: public_profile

@@ -1,16 +1,16 @@
-uuid: 1cc0f967-3e72-49c5-8f5c-cae10f21b489
+uuid: fc0f5747-381b-472e-a012-defceff57d60
 langcode: en
 status: true
 dependencies:
   module:
+    - user
     - userprofiles
-_core:
-  default_config_hash: dnP9A7_umOWQQgA_qNggVyL2lgvQO182iSbcwZgy6Jc
-id: private_profile.field_firstname_state
-field_name: field_firstname_state
+id: private_profile.field_userref
+field_name: field_userref
 entity_type: private_profile
-type: boolean
-settings: {  }
+type: entity_reference
+settings:
+  target_type: user
 module: core
 locked: false
 cardinality: 1

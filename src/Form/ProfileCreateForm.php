@@ -39,7 +39,6 @@ class ProfileCreateForm extends FormBase {
         $form['firstname'] = array(
             '#type' => 'textfield',
             '#title' => $this->t('First Name'),
-            '#default_value' => 'Shannon',
             '#default_value' => $private_profile->get('field_firstname')->value,
         );
 
@@ -51,7 +50,6 @@ class ProfileCreateForm extends FormBase {
         $form['lastname'] = array(
             '#type' => 'textfield',
             '#title' => $this->t('Last Name'),
-            '#default_value' => 'Rothe',
             '#default_value' => $private_profile->get('field_lastname')->value,
         );
 
@@ -77,7 +75,6 @@ class ProfileCreateForm extends FormBase {
         $form['homephone'] = array(
             '#type' => 'textfield',
             '#title' => $this->t('Home Phone'),
-            '#default_value' => '6372unlikely',
             '#default_value' => $private_profile->get('field_homephone')->value,
         );
 
@@ -89,7 +86,6 @@ class ProfileCreateForm extends FormBase {
         $form['mobile'] = array(
             '#type' => 'textfield',
             '#title' => $this->t('Mobile Phone'),
-            '#default_value' => '04unlikely',
             '#default_value' => $private_profile->get('field_mobile')->value,
         );
 
@@ -101,7 +97,6 @@ class ProfileCreateForm extends FormBase {
         $form['role'] = array(
             '#type' => 'textfield',
             '#title' => $this->t('Roles'),
-            '#default_value' => 'Full Time Sickcunt',
             '#default_value' => $private_profile->get('field_role')->value,
         );
 
@@ -109,12 +104,33 @@ class ProfileCreateForm extends FormBase {
             '#type' => 'checkbox',
             '#title' => $this->t('Show Address'),
             '#default_value' => $private_profile->get('field_address_state')->value
-        );  
-        $form['address'] = array(
+        );
+
+        $address = $private_profile->get('field_address')->value;
+        $delimeters = array(", ", ", ", ", ");
+        $delimited_address = explode(",", str_replace($delimeters, ",", $address));
+        $form['address-line'] = array(
             '#type' => 'textfield',
-            '#title' => $this->t('Address'),
-            '#default_value' => '8 Darren Drive, Mudgee, NSW, 2850',
-            '#default_value' => $private_profile->get('field_address')->value,
+            '#title' => $this->t('Address Line'),
+            '#default_value' => $delimited_address[0]
+        );
+
+        $form['address-city'] = array(
+            '#type' => 'textfield',
+            '#title' => $this->t('Suburb/City/Town'),
+            '#default_value' => $delimited_address[1]
+        );
+
+        $form['address-state-field'] = array(
+            '#type' => 'textfield',
+            '#title' => $this->t('State'),
+            '#default_value' => $delimited_address[2]
+        );
+
+        $form['address-postcode'] = array(
+            '#type' => 'textfield',
+            '#title' => $this->t('Postcode'),
+            '#default_value' => $delimited_address[3]
         );
 
         $form['certification-state'] = array(
@@ -126,6 +142,7 @@ class ProfileCreateForm extends FormBase {
             '#type' => 'textfield',
             '#title' => $this->t('Certifications'),
             '#default_value' => $private_profile->get('field_certifications')->value,
+            '#multiple' => TRUE
         );
 
         $form['submit'] = array(
@@ -166,7 +183,10 @@ class ProfileCreateForm extends FormBase {
         $role_state = $form_state->getValue('role-state');
         $role = $form_state->getValue('role');
         $address_state = $form_state->getValue('address-state');
-        $address = $form_state->getValue('address');
+        $address = $form_state->getValue('address-line');
+        $address .= ", " . $form_state->getValue('address-city');
+        $address .= ", " . $form_state->getValue('address-state-field');
+        $address .= ", " . $form_state->getValue('address-postcode');
         $certification_state = $form_state->getValue('certification-state');
         $certifications = $form_state->getValue('certifications');
 

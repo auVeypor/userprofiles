@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - userprofiles
+_core:
+  default_config_hash: JKq22ifT03cPTUjQ2L7L9kI6frubcpHrBBYtByGS5k4
 id: private_profile.field_image_state
 field_name: field_image_state
 entity_type: private_profile

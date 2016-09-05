@@ -6,6 +6,8 @@ dependencies:
     - field.storage.public_profile.field_mobile_state
   module:
     - userprofiles
+_core:
+  default_config_hash: U2CGyT-yz6ylKsyrw_JB9YpL5VgHhBREe8mFkg9GU7g
 id: public_profile.public_profile.field_mobile_state
 field_name: field_mobile_state
 entity_type: public_profile

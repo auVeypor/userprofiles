@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - userprofiles
+_core:
+  default_config_hash: tDiogwdH7zPTVPI4ge5wp98ByfjMFkE4PD1TmO9KOds
 id: public_profile.field_mobile_state
 field_name: field_mobile_state
 entity_type: public_profile

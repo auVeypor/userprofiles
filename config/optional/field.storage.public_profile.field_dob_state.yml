@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - userprofiles
+_core:
+  default_config_hash: 3eu-IoGENyOTI8M4BqNtAHh7pxrHFeq4TtFliRFqg4Q
 id: public_profile.field_dob_state
 field_name: field_dob_state
 entity_type: public_profile

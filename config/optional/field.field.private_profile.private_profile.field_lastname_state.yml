@@ -6,6 +6,8 @@ dependencies:
     - field.storage.private_profile.field_lastname_state
   module:
     - userprofiles
+_core:
+  default_config_hash: ON7heeFNMsrp2Sl8Ve1L510Ky1pbkrLGi8CRu4wGmUw
 id: private_profile.private_profile.field_lastname_state
 field_name: field_lastname_state
 entity_type: private_profile

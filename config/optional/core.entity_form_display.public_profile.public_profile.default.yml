@@ -20,10 +20,11 @@ dependencies:
     - field.field.public_profile.public_profile.field_mobile_state
     - field.field.public_profile.public_profile.field_role
     - field.field.public_profile.public_profile.field_role_state
+    - field.field.public_profile.public_profile.field_userref
   module:
     - userprofiles
 _core:
-  default_config_hash: HU7ppP5STuu6-DT2CxA3On_MH1yZss7KEnxzBZoJzjQ
+  default_config_hash: fExztkLXNTCum-faN0KBQ4RFJMnNUvjCfFf3reS0bmI
 id: public_profile.public_profile.default
 targetEntityType: public_profile
 bundle: public_profile
@@ -139,6 +140,14 @@ content:
       display_label: false
     third_party_settings: {  }
     type: boolean_checkbox
+  field_userref:
+    weight: 28
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
   langcode:
     type: language_select
     weight: 10

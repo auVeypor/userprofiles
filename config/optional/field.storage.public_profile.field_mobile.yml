@@ -1,18 +1,19 @@
+uuid: 27445b37-7f95-4eb8-8103-ff9f14c5b50f
 langcode: en
 status: true
 dependencies:
-    module:
-        - userprofiles
+  module:
+    - userprofiles
 _core:
-    default_config_hash: FXsjZR2it4F0YQcQrdZixi3fuU8j5Q4gAQlXXnW-c3c
+  default_config_hash: FXsjZR2it4F0YQcQrdZixi3fuU8j5Q4gAQlXXnW-c3c
 id: public_profile.field_mobile
 field_name: field_mobile
 entity_type: public_profile
 type: string
 settings:
-    max_length: 255
-    is_ascii: false
-    case_sensitive: false
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
 module: core
 locked: false
 cardinality: 1

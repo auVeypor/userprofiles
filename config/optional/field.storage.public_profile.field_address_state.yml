@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - userprofiles
+_core:
+  default_config_hash: xrVSZOK4HBNKalTOzW9bZqF1lreEWNG8oL6G03yN4cQ
 id: public_profile.field_address_state
 field_name: field_address_state
 entity_type: public_profile

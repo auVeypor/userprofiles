@@ -1,18 +1,19 @@
+uuid: 34920d4e-e8ac-489f-804e-cf736922e69e
 langcode: en
 status: true
 dependencies:
-    module:
-        - userprofiles
+  module:
+    - userprofiles
 _core:
-    default_config_hash: jqvAB4fRfyWT3BwXFvx7cp0pS70ql5GXH3123B7fN8Y
+  default_config_hash: jqvAB4fRfyWT3BwXFvx7cp0pS70ql5GXH3123B7fN8Y
 id: public_profile.field_certifications
 field_name: field_certifications
 entity_type: public_profile
 type: string
 settings:
-    max_length: 255
-    is_ascii: false
-    case_sensitive: false
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
 module: core
 locked: false
 cardinality: -1

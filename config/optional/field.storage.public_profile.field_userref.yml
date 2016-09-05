@@ -1,16 +1,16 @@
-uuid: 2d58ef3c-b42a-4c3c-93cb-702ca1e2a568
+uuid: 4fd4590d-3fea-48b4-b364-1dcd9a72652c
 langcode: en
 status: true
 dependencies:
   module:
+    - user
     - userprofiles
-_core:
-  default_config_hash: X-k2g94dtjg_iyJV1bMOXXb1-ECRfccH9lXPlhbDveg
-id: public_profile.field_homephone_state
-field_name: field_homephone_state
+id: public_profile.field_userref
+field_name: field_userref
 entity_type: public_profile
-type: boolean
-settings: {  }
+type: entity_reference
+settings:
+  target_type: user
 module: core
 locked: false
 cardinality: 1

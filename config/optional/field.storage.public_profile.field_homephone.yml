@@ -1,18 +1,19 @@
+uuid: a4d16f13-a01f-40b0-affb-0e1c54677f97
 langcode: en
 status: true
 dependencies:
-    module:
-        - userprofiles
+  module:
+    - userprofiles
 _core:
-    default_config_hash: SGNDb5LFil71r-W6uCK1EX2afmc0L66dc0yyLXpKBF8
+  default_config_hash: SGNDb5LFil71r-W6uCK1EX2afmc0L66dc0yyLXpKBF8
 id: public_profile.field_homephone
 field_name: field_homephone
 entity_type: public_profile
 type: string
 settings:
-    max_length: 255
-    is_ascii: false
-    case_sensitive: false
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
 module: core
 locked: false
 cardinality: 1

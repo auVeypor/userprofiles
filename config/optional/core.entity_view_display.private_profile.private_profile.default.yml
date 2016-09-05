@@ -20,11 +20,12 @@ dependencies:
     - field.field.private_profile.private_profile.field_mobile_state
     - field.field.private_profile.private_profile.field_role
     - field.field.private_profile.private_profile.field_role_state
+    - field.field.private_profile.private_profile.field_userref
   module:
     - user
     - userprofiles
 _core:
-  default_config_hash: rp0o99ujDxFB5Xw89CsRd8JLXZZ91QKv1IqT-bFZihs
+  default_config_hash: 4xxBXePLtCul9vZtLKXirveLH0bJYRwTmk2tKPNFq7c
 id: private_profile.private_profile.default
 targetEntityType: private_profile
 bundle: private_profile
@@ -167,6 +168,13 @@ content:
       format_custom_true: ''
     third_party_settings: {  }
     type: boolean
+  field_userref:
+    weight: 19
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
   name:
     label: above
     type: string

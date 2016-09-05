@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - userprofiles
+_core:
+  default_config_hash: w5NLZ6nlXTjC4FLcF_bCUrB1sMgkiv4sdWpdJHmLcK8
 id: private_profile.field_certifications_state
 field_name: field_certifications_state
 entity_type: private_profile

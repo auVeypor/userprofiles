@@ -6,6 +6,8 @@ dependencies:
     - field.storage.public_profile.field_address_state
   module:
     - userprofiles
+_core:
+  default_config_hash: PYclszi9epmJ358t843WdqW573t2Z6kfehHK0NH1aWs
 id: public_profile.public_profile.field_address_state
 field_name: field_address_state
 entity_type: public_profile
