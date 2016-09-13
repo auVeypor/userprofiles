@@ -5,6 +5,8 @@ dependencies:
   module:
     - user
     - userprofiles
+_core:
+  default_config_hash: qaURH6_jJ9M36boRnD2_pqfyjxJRWv9EQ126VTsIvAM
 id: public_profile.field_userref
 field_name: field_userref
 entity_type: public_profile

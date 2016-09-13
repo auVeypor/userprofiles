@@ -1,20 +1,17 @@
-uuid: 180a291c-1b64-46a7-a6d3-badc8e159142
+uuid: ff4a3ad9-50db-499b-ab56-1672c08b5791
 langcode: en
 status: true
 dependencies:
   module:
+    - datetime
     - userprofiles
-_core:
-  default_config_hash: iCGA6sZ_c2oUXAAdJzYbYeBnucR6CH8-11KcpDJ9avg
 id: public_profile.field_dob
 field_name: field_dob
 entity_type: public_profile
-type: string
+type: datetime
 settings:
-  max_length: 255
-  is_ascii: false
-  case_sensitive: false
-module: core
+  datetime_type: date
+module: datetime
 locked: false
 cardinality: 1
 translatable: true

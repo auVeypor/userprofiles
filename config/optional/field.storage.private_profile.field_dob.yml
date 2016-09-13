@@ -1,20 +1,17 @@
-uuid: 3ea8f536-46a0-4039-9279-471ef456e6a1
+uuid: 052c05fc-d88f-4223-b748-d7fb3002e9a6
 langcode: en
 status: true
 dependencies:
   module:
+    - datetime
     - userprofiles
-_core:
-  default_config_hash: IAj6jimdE9Zf9PvFGkb4HXFVzufXCJvYzROzFTrFS64
 id: private_profile.field_dob
 field_name: field_dob
 entity_type: private_profile
-type: string
+type: datetime
 settings:
-  max_length: 255
-  is_ascii: false
-  case_sensitive: false
-module: core
+  datetime_type: date
+module: datetime
 locked: false
 cardinality: 1
 translatable: true

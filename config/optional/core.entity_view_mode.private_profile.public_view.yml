@@ -1,0 +1,10 @@
+uuid: 3d8670b2-d304-4b8a-b2b3-360fa5ce9e10
+langcode: en
+status: true
+dependencies:
+  module:
+    - userprofiles
+id: private_profile.public_view
+label: 'Public View'
+targetEntityType: private_profile
+cache: true

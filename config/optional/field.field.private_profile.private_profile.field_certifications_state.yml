@@ -7,7 +7,7 @@ dependencies:
   module:
     - userprofiles
 _core:
-  default_config_hash: KPL-2LIsVC5AH_zIr0WuJXSPJnRlSjItnHr1O211jrA
+  default_config_hash: 4YeqW5borMNpcF82oG7o-newqT8q4qBOV2DmlFPrV5s
 id: private_profile.private_profile.field_certifications_state
 field_name: field_certifications_state
 entity_type: private_profile
@@ -21,6 +21,6 @@ default_value:
     value: 0
 default_value_callback: ''
 settings:
-  on_label: 'On'
-  off_label: 'Off'
+  on_label: 'Show Certifications'
+  off_label: 'Show Certifications'
 field_type: boolean

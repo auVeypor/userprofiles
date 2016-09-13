@@ -26,7 +26,7 @@ use Drupal\user\UserInterface;
  *     "form" = {
  *       "default" = "Drupal\userprofiles\Form\PrivateProfileForm",
  *       "add" = "Drupal\userprofiles\Form\PrivateProfileForm",
- *       "edit" = "Drupal\userprofiles\Form\PrivateProfileForm",
+ *       "edit" = "Drupal\userprofiles\Form\PrivateEditForm",
  *       "delete" = "Drupal\userprofiles\Form\PrivateProfileDeleteForm",
  *     },
  *     "access" = "Drupal\userprofiles\PrivateProfileAccessControlHandler",
@@ -47,7 +47,7 @@ use Drupal\user\UserInterface;
  *   links = {
  *     "canonical" = "/admin/structure/private_profile/{private_profile}",
  *     "add-form" = "/admin/structure/private_profile/add",
- *     "edit-form" = "/admin/structure/private_profile/{private_profile}/edit",
+ *     "edit-form" = "/profile/{private_profile}/edit",
  *     "delete-form" = "/admin/structure/private_profile/{private_profile}/delete",
  *     "collection" = "/admin/structure/private_profile",
  *   },

@@ -22,22 +22,23 @@ dependencies:
     - field.field.private_profile.private_profile.field_role_state
     - field.field.private_profile.private_profile.field_userref
   module:
+    - address
+    - datetime
     - user
     - userprofiles
 _core:
-  default_config_hash: 4xxBXePLtCul9vZtLKXirveLH0bJYRwTmk2tKPNFq7c
+  default_config_hash: zWOE1bmzInHCI4LQwbcoU0kLTJ9Sdl8MLZ_EobNI7P4
 id: private_profile.private_profile.default
 targetEntityType: private_profile
 bundle: private_profile
 mode: default
 content:
   field_address:
-    weight: 1
+    weight: 20
     label: above
-    settings:
-      link_to_entity: false
+    settings: {  }
     third_party_settings: {  }
-    type: string
+    type: address_default
   field_address_state:
     weight: 10
     label: above
@@ -64,12 +65,13 @@ content:
     third_party_settings: {  }
     type: boolean
   field_dob:
-    weight: 3
+    weight: 21
     label: above
     settings:
-      link_to_entity: false
+      format_type: medium
+      timezone_override: ''
     third_party_settings: {  }
-    type: string
+    type: datetime_default
   field_dob_state:
     weight: 12
     label: above

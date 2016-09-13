@@ -4,168 +4,80 @@ status: true
 dependencies:
   config:
     - field.field.public_profile.public_profile.field_address
-    - field.field.public_profile.public_profile.field_address_state
     - field.field.public_profile.public_profile.field_certifications
-    - field.field.public_profile.public_profile.field_certifications_state
     - field.field.public_profile.public_profile.field_dob
-    - field.field.public_profile.public_profile.field_dob_state
     - field.field.public_profile.public_profile.field_firstname
-    - field.field.public_profile.public_profile.field_firstname_state
     - field.field.public_profile.public_profile.field_homephone
-    - field.field.public_profile.public_profile.field_homephone_state
-    - field.field.public_profile.public_profile.field_image_state
     - field.field.public_profile.public_profile.field_lastname
-    - field.field.public_profile.public_profile.field_lastname_state
     - field.field.public_profile.public_profile.field_mobile
-    - field.field.public_profile.public_profile.field_mobile_state
     - field.field.public_profile.public_profile.field_role
-    - field.field.public_profile.public_profile.field_role_state
     - field.field.public_profile.public_profile.field_userref
   module:
+    - address
+    - datetime
     - userprofiles
 _core:
-  default_config_hash: fExztkLXNTCum-faN0KBQ4RFJMnNUvjCfFf3reS0bmI
+  default_config_hash: BCiSPwZvKTGyXyA5dX3Qd2RxmsVuSaPFHpARkGEVaCE
 id: public_profile.public_profile.default
 targetEntityType: public_profile
 bundle: public_profile
 mode: default
 content:
   field_address:
-    weight: 17
+    weight: 7
     settings:
-      size: 60
-      placeholder: ''
+      default_country: null
     third_party_settings: {  }
-    type: string_textfield
-  field_address_state:
-    weight: 19
-    settings:
-      display_label: false
-    third_party_settings: {  }
-    type: boolean_checkbox
+    type: address_default
   field_certifications:
-    weight: 18
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-  field_certifications_state:
-    weight: 20
-    settings:
-      display_label: false
-    third_party_settings: {  }
-    type: boolean_checkbox
-  field_dob:
-    weight: 13
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-  field_dob_state:
-    weight: 22
-    settings:
-      display_label: false
-    third_party_settings: {  }
-    type: boolean_checkbox
-  field_firstname:
-    weight: 11
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-  field_firstname_state:
-    weight: 23
-    settings:
-      display_label: false
-    third_party_settings: {  }
-    type: boolean_checkbox
-  field_homephone:
-    weight: 14
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-  field_homephone_state:
-    weight: 25
-    settings:
-      display_label: false
-    third_party_settings: {  }
-    type: boolean_checkbox
-  field_image_state:
-    weight: 21
-    settings:
-      display_label: false
-    third_party_settings: {  }
-    type: boolean_checkbox
-  field_lastname:
-    weight: 12
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-  field_lastname_state:
-    weight: 24
-    settings:
-      display_label: false
-    third_party_settings: {  }
-    type: boolean_checkbox
-  field_mobile:
     weight: 15
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-  field_mobile_state:
-    weight: 26
-    settings:
-      display_label: false
-    third_party_settings: {  }
-    type: boolean_checkbox
-  field_role:
-    weight: 16
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-  field_role_state:
-    weight: 27
-    settings:
-      display_label: false
-    third_party_settings: {  }
-    type: boolean_checkbox
-  field_userref:
-    weight: 28
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-  langcode:
-    type: language_select
-    weight: 10
+  field_dob:
+    weight: 5
     settings: {  }
     third_party_settings: {  }
-  name:
+    type: datetime_default
+  field_firstname:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
     type: string_textfield
-    weight: -4
+  field_homephone:
+    weight: 9
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  user_id:
-    type: entity_reference_autocomplete
-    weight: 5
+    type: string_textfield
+  field_lastname:
+    weight: 3
     settings:
-      match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+    type: string_textfield
+  field_mobile:
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_role:
+    weight: 13
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+hidden:
+  field_userref: true
+  langcode: true
+  name: true
+  user_id: true

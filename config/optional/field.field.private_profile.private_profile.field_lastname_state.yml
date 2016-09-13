@@ -7,7 +7,7 @@ dependencies:
   module:
     - userprofiles
 _core:
-  default_config_hash: ON7heeFNMsrp2Sl8Ve1L510Ky1pbkrLGi8CRu4wGmUw
+  default_config_hash: D5dz2AqBtcn7h9ARm5iKpSw6szDpG5zs8HzQ_mLi2Mc
 id: private_profile.private_profile.field_lastname_state
 field_name: field_lastname_state
 entity_type: private_profile
@@ -21,6 +21,6 @@ default_value:
     value: 0
 default_value_callback: ''
 settings:
-  on_label: 'On'
-  off_label: 'Off'
+  on_label: 'Show Last Name'
+  off_label: 'Show Last Name'
 field_type: boolean

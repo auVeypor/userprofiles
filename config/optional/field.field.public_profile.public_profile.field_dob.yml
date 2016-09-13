@@ -1,13 +1,12 @@
-uuid: e70efa32-fde1-4ae0-bb44-80d6819175f6
+uuid: 79a7af6f-5791-4ec5-a003-372cc7f8a2a4
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.public_profile.field_dob
   module:
+    - datetime
     - userprofiles
-_core:
-  default_config_hash: D6klx2hxokdXsT9th72WVB68YH3T3rdmt21IFijTd-0
 id: public_profile.public_profile.field_dob
 field_name: field_dob
 entity_type: public_profile
@@ -19,4 +18,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string
+field_type: datetime

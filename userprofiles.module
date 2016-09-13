@@ -33,7 +33,7 @@ function userprofiles_help($route_name, RouteMatchInterface $route_match) {
 /**
  * Implements hook_cron().
  */
-function userprofiles_cron() {
+/** function userprofiles_cron() {
 	\Drupal::logger('userprofiles-cron')->error('Running');
 	//load the user list and check last
 	$users = User::loadMultiple();
@@ -52,4 +52,50 @@ function userprofiles_cron() {
 			$publ->delete();
 		}
 	}
+} */
+
+/**
+ * Implements hook_user_insert().
+ */
+function userprofiles_user_insert($account) {
+    // Grab the UID for the user account that was created and load their account
+    $uid = $account->id();
+    $user = User::load($uid);
+
+    // We need to check if the entity reference in the User account is set,
+    // if not, then we have to create a blank entity and go from there
+    if (!isset($user->field_privref->entity) && !isset($user->field_pubref->entity)) {
+      // Create the blank PrivateProfile entity
+      $private_profile = PrivateProfile::create([
+        'label' => $account->label(),
+        'name' => $account->label(),
+        'field_userref' => $user
+      ]);
+      $private_profile->save();
+
+      // Create the blank PublicProfile entity
+      $public_profile = PublicProfile::create([
+        'label' => $account->label(),
+        'name' => $account->label(),
+        'field_userref' => $user
+      ]);
+      $public_profile->save();
+
+      // Set the user accounts reference
+      $user->field_privref->entity = $private_profile;
+      $user->field_pubref->entity = $public_profile;
+      $user->save();
+    }
+}
+
+/**
+ * Implements hook_user_delete().
+ */
+function userprofiles_user_delete($account) {
+  // Load references from deleted account, and delete them too.
+  $private_profile = $account->field_privref->entity;
+  $public_profile = $account->field_pubref->entity;
+
+  $private_profile->delete();
+  $public_profile->delete();
 }

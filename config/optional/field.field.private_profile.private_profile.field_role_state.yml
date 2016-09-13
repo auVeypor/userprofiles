@@ -7,7 +7,7 @@ dependencies:
   module:
     - userprofiles
 _core:
-  default_config_hash: 38y3odmPClG9XAcZfj2bLjssIsUkGBEHAUNmoFf51_8
+  default_config_hash: LjjwuWAk1IVEoDc3CrWdrsVN0J-VNUs4ERdeTB60fdA
 id: private_profile.private_profile.field_role_state
 field_name: field_role_state
 entity_type: private_profile
@@ -21,6 +21,6 @@ default_value:
     value: 0
 default_value_callback: ''
 settings:
-  on_label: 'On'
-  off_label: 'Off'
+  on_label: 'Show Role'
+  off_label: 'Show Role'
 field_type: boolean
