@@ -1,11 +1,11 @@
-uuid: 7c4ec6c9-83ac-43da-8bfb-7193d3f86f0d
+uuid: a4755be5-729b-4aa3-9655-5dec727ae252
 langcode: en
 status: true
 dependencies:
   module:
     - userprofiles
-id: private_profile.field_image_state
-field_name: field_image_state
+id: private_profile.field_contact_email_state
+field_name: field_contact_email_state
 entity_type: private_profile
 type: boolean
 settings: {  }

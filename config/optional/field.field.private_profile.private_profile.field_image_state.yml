@@ -1,4 +1,4 @@
-uuid: ff1f09cf-a775-47f3-a3dc-c07edc11ef3a
+uuid: 2d831e60-bb80-4111-811a-43041cde5d03
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,6 @@ dependencies:
     - field.storage.private_profile.field_image_state
   module:
     - userprofiles
-_core:
-  default_config_hash: nGKhEpQlulUxmCDzFzVskOWyQnXXvtN7FKenBHXEon4
 id: private_profile.private_profile.field_image_state
 field_name: field_image_state
 entity_type: private_profile

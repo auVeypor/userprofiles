@@ -5,16 +5,20 @@ dependencies:
   config:
     - field.field.public_profile.public_profile.field_address
     - field.field.public_profile.public_profile.field_certifications
+    - field.field.public_profile.public_profile.field_contact_email
     - field.field.public_profile.public_profile.field_dob
     - field.field.public_profile.public_profile.field_firstname
     - field.field.public_profile.public_profile.field_homephone
+    - field.field.public_profile.public_profile.field_image
     - field.field.public_profile.public_profile.field_lastname
     - field.field.public_profile.public_profile.field_mobile
     - field.field.public_profile.public_profile.field_role
     - field.field.public_profile.public_profile.field_userref
+    - image.style.thumbnail
   module:
     - address
     - datetime
+    - image
     - userprofiles
 _core:
   default_config_hash: BCiSPwZvKTGyXyA5dX3Qd2RxmsVuSaPFHpARkGEVaCE
@@ -36,6 +40,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+  field_contact_email:
+    weight: 17
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
   field_dob:
     weight: 5
     settings: {  }
@@ -55,6 +66,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+  field_image:
+    weight: 16
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
   field_lastname:
     weight: 3
     settings:
