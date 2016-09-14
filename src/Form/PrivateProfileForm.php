@@ -53,8 +53,10 @@ class PrivateProfileForm extends ContentEntityForm {
           // If the public profile is there, THEN we can copy data
           if ($public_profile) {
             // Grab the states from the private profile form
+            $image_state = $entity->field_image_state->value;
             $firstname_state = $entity->field_firstname_state->value;
             $lastname_state = $entity->field_lastname_state->value;
+            $contact_email_state = $entity->field_contact_email_state->value;
             $dob_state = $entity->field_dob_state->value;
             $address_state = $entity->field_address_state->value;
             $homephone_state = $entity->field_homephone_state->value;
@@ -63,8 +65,10 @@ class PrivateProfileForm extends ContentEntityForm {
             $certifications_state = $entity->field_certifications_state->value;
 
             // Grab the values from the private profile form
+            $image = $entity->field_image;
             $firstname = $entity->field_firstname->value;
             $lastname = $entity->field_lastname->value;
+            $contact_email = $entity->field_contact_email->value;
             $dob = $entity->field_dob->value;
             $address = $entity->field_address;
             $homephone = $entity->field_homephone->value;
@@ -73,8 +77,10 @@ class PrivateProfileForm extends ContentEntityForm {
             $certifications = $entity->field_certifications->value;
 
             // First set everything to blank
+            $public_profile->field_image = "";
             $public_profile->field_firstname = "";
             $public_profile->field_lastname = "";
+            $public_profile->field_contact_email = "";
             $public_profile->field_dob = "";
             $public_profile->field_address = "";
             $public_profile->field_homephone = "";
@@ -83,8 +89,10 @@ class PrivateProfileForm extends ContentEntityForm {
             $public_profile->field_certifications = "";
 
             // Reset the fields that have been specified
+            if ($image_state) $public_profile->field_image = $image;
             if ($firstname_state) $public_profile->field_firstname = $firstname;
             if ($lastname_state) $public_profile->field_lastname = $lastname;
+            if ($contact_email_state) $public_profile->field_contact_email = $contact_email;
             if ($dob_state) $public_profile->field_dob = $dob;
             if ($address_state) $public_profile->field_address = $address;
             if ($homephone_state) $public_profile->field_homephone = $homephone;
