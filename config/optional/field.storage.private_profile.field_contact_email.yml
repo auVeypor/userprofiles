@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - userprofiles
+_core:
+  default_config_hash: ISWGoYbGIcQh-HcoEht4qqPyUaZROQeNoKeEVBsh3pg
 id: private_profile.field_contact_email
 field_name: field_contact_email
 entity_type: private_profile

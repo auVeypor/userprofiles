@@ -6,6 +6,8 @@ dependencies:
     - field.storage.private_profile.field_contact_email
   module:
     - userprofiles
+_core:
+  default_config_hash: RAOlzxI-p7FBsKDE2ZuEQCIr7NS3hAUgivaEcJEJA1o
 id: private_profile.private_profile.field_contact_email
 field_name: field_contact_email
 entity_type: private_profile

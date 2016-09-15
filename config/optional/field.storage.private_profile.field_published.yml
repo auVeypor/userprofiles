@@ -1,18 +1,15 @@
-uuid: ec526597-e914-4cb5-aa84-1ec185575225
+uuid: e34d75bf-5322-43b2-bc12-500c437952c7
 langcode: en
 status: true
 dependencies:
   module:
-    - address
     - userprofiles
-_core:
-  default_config_hash: ZKnfOyFNdQ86jLlPMpzNKbXWm4dJOAzt7lbnCHL5PeA
-id: private_profile.field_address
-field_name: field_address
+id: private_profile.field_published
+field_name: field_published
 entity_type: private_profile
-type: address
+type: boolean
 settings: {  }
-module: address
+module: core
 locked: false
 cardinality: 1
 translatable: true

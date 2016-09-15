@@ -21,6 +21,7 @@ dependencies:
     - field.field.private_profile.private_profile.field_lastname_state
     - field.field.private_profile.private_profile.field_mobile
     - field.field.private_profile.private_profile.field_mobile_state
+    - field.field.private_profile.private_profile.field_published
     - field.field.private_profile.private_profile.field_role
     - field.field.private_profile.private_profile.field_role_state
     - field.field.private_profile.private_profile.field_userref
@@ -31,7 +32,7 @@ dependencies:
     - user
     - userprofiles
 _core:
-  default_config_hash: zWOE1bmzInHCI4LQwbcoU0kLTJ9Sdl8MLZ_EobNI7P4
+  default_config_hash: yW-4REhu7irPf-FjMmI7p4NpvZAf-k5ZOXmtaJIv_7I
 id: private_profile.private_profile.default
 targetEntityType: private_profile
 bundle: private_profile
@@ -174,6 +175,15 @@ content:
     type: string
   field_mobile_state:
     weight: 16
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+  field_published:
+    weight: 27
     label: above
     settings:
       format: default

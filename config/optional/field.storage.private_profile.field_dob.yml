@@ -5,6 +5,8 @@ dependencies:
   module:
     - datetime
     - userprofiles
+_core:
+  default_config_hash: xXPZjaweYH1K_DB0arAzUq2Jvm3dzDc7d3uPUDefTbU
 id: private_profile.field_dob
 field_name: field_dob
 entity_type: private_profile

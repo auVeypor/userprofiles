@@ -1,17 +1,18 @@
+uuid: ff4a3ad9-50db-499b-ab56-1672c08b5791
 langcode: en
 status: true
 dependencies:
-    module:
-        - datetime
-        - userprofiles
+  module:
+    - datetime
+    - userprofiles
 _core:
-    default_config_hash: 09pUyG1G69dDCYFYlUgTmS1vurpla34np9AXD8sYIOc
+  default_config_hash: 09pUyG1G69dDCYFYlUgTmS1vurpla34np9AXD8sYIOc
 id: public_profile.field_dob
 field_name: field_dob
 entity_type: public_profile
 type: datetime
 settings:
-    datetime_type: date
+  datetime_type: date
 module: datetime
 locked: false
 cardinality: 1

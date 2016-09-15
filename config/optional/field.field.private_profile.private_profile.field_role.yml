@@ -7,7 +7,7 @@ dependencies:
   module:
     - userprofiles
 _core:
-  default_config_hash: sENLipAy5ILanlK_xD4OxHaiEBOyNEV-M-8D9kwXy6k
+  default_config_hash: kJL0ovl4bJqJWqRpAKbM10udWosXomrpbv0w4a2sD5s
 id: private_profile.private_profile.field_role
 field_name: field_role
 entity_type: private_profile
