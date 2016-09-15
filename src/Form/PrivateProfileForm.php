@@ -109,6 +109,6 @@ class PrivateProfileForm extends ContentEntityForm {
           '%label' => $entity->label(),
         ]));
     }
-    $form_state->setRedirect('entity.private_profile.canonical', ['private_profile' => $entity->id()]);
+    $form_state->setRedirect('entity.private_profile.edit_form', ['private_profile' => $entity->id()]);
   }
 }
