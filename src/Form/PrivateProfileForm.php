@@ -77,7 +77,7 @@ class PrivateProfileForm extends ContentEntityForm {
             $certifications = $entity->field_certifications->value;
 
             // First set everything to blank
-            $public_profile->field_image = "";
+            $public_profile->field_image = NULL;
             $public_profile->field_firstname = "";
             $public_profile->field_lastname = "";
             $public_profile->field_contact_email = "";
@@ -99,7 +99,8 @@ class PrivateProfileForm extends ContentEntityForm {
             if ($mobile_state) $public_profile->field_mobile = $mobile;
             if ($role_state) $public_profile->field_role = $role;
             if ($certifications_state) $public_profile->field_certifications = $certifications;
-
+            
+            $public_profile->status->value = $entity->field_published->value;
             $public_profile->save();
           }
         }

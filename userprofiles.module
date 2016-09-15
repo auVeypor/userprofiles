@@ -79,6 +79,7 @@ function userprofiles_user_insert($account) {
         'name' => $account->label(),
         'field_userref' => $user
       ]);
+      $public_profile->status = 0;
       $public_profile->save();
 
       // Set the user accounts reference

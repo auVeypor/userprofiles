@@ -1,10 +1,11 @@
-uuid: 3aaba6a6-644e-49a1-8b35-8d49c1bed34f
 langcode: en
 status: true
 dependencies:
-  module:
-    - address
-    - userprofiles
+    module:
+        - address
+        - userprofiles
+_core:
+    default_config_hash: N-_nWP-0bCdabeEpyIM6WylvZNHdG5Np5yk_T6ZhP_k
 id: public_profile.field_address
 field_name: field_address
 entity_type: public_profile

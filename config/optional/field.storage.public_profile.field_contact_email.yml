@@ -1,9 +1,10 @@
-uuid: ec4cb991-c2f0-4855-a45c-36862863a8dc
 langcode: en
 status: true
 dependencies:
-  module:
-    - userprofiles
+    module:
+        - userprofiles
+_core:
+    default_config_hash: guIflIcCW0uEeXftK0RU46NKFhb4xtzUhHqlVAyQFmc
 id: public_profile.field_contact_email
 field_name: field_contact_email
 entity_type: public_profile
