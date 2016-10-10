@@ -5,7 +5,7 @@ dependencies:
   module:
     - userprofiles
 _core:
-  default_config_hash: 8ku7e8Rla7A3_1pjEQ3Kz3Y9qHIBZHhBUtaEzgDTr6c
+  default_config_hash: 2NjMk2MBn3asETKVCQuIzkcVc8DkdIH8x6vcFBruEDo
 id: private_profile.field_contact_email_state
 field_name: field_contact_email_state
 entity_type: private_profile

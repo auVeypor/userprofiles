@@ -6,7 +6,7 @@ dependencies:
     - datetime
     - userprofiles
 _core:
-  default_config_hash: xXPZjaweYH1K_DB0arAzUq2Jvm3dzDc7d3uPUDefTbU
+  default_config_hash: AANGJFOjbeiEdmqV8zCsGFWek7DTc8uxnlPQ52F9dyU
 id: private_profile.field_dob
 field_name: field_dob
 entity_type: private_profile

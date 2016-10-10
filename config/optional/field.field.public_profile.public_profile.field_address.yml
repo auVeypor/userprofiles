@@ -8,7 +8,7 @@ dependencies:
     - address
     - userprofiles
 _core:
-  default_config_hash: nWFzCxNgity9qVAO54OGG8_yWwMHXZE7PQTghplL-eo
+  default_config_hash: p7HV2s4kjOQdngkZReBMDYn-CEg0PJBqbhXO8Xjfkts
 id: public_profile.public_profile.field_address
 field_name: field_address
 entity_type: public_profile

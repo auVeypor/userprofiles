@@ -32,7 +32,7 @@ dependencies:
     - image
     - userprofiles
 _core:
-  default_config_hash: Y3JYnp5zGNvXzc3sYyojrhOU8IK_7IlW-8MWr7t83QM
+  default_config_hash: WK-QPmxhWL62IzoeRaYw5y5hfHEc4ickZLzmgDp6v2M
 id: private_profile.private_profile.default
 targetEntityType: private_profile
 bundle: private_profile

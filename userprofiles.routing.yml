@@ -13,3 +13,11 @@ userprofiles.removeDeleted:
     _controller: '\Drupal\userprofiles\Controller\BlankController::removeDeleted'
   requirements:
     _permission: 'access content entity controllers'
+
+userprofiles.accessProfileLink:
+  path: '/profile/accessProfile'
+  defaults:
+    _title: 'Access Profile Link'
+    _controller: '\Drupal\userprofiles\Controller\BlankController::accessProfileLink'
+  requirements:
+    _permission: 'access content entity controllers'

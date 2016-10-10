@@ -5,7 +5,7 @@ dependencies:
   module:
     - userprofiles
 _core:
-  default_config_hash: 63fNCM2TMECEoXwS_ZViy8p8kYdNmqopBuygrFMqW1Y
+  default_config_hash: LIZlFHM9I59f0lNyi-M5gCu5-t7VBPGTHbciNog0BC0
 id: private_profile.field_certifications
 field_name: field_certifications
 entity_type: private_profile

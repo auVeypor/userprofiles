@@ -58,6 +58,7 @@ function userprofiles_help($route_name, RouteMatchInterface $route_match) {
  * Implements hook_user_insert().
  */
 function userprofiles_user_insert($account) {
+    global $base_url;
     // Grab the UID for the user account that was created and load their account
     $uid = $account->id();
     $user = User::load($uid);
@@ -85,6 +86,11 @@ function userprofiles_user_insert($account) {
       // Set the user accounts reference
       $user->field_privref->entity = $private_profile;
       $user->field_pubref->entity = $public_profile;
+
+      $user->field_publink = $base_url . "/profile/" . $public_profile->id() . "/view";
+      $user->field_publink->title = "View Public Profile";
+
+
       $user->save();
     }
 }

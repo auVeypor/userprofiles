@@ -5,7 +5,7 @@ dependencies:
   module:
     - userprofiles
 _core:
-  default_config_hash: k-WehC4pW3kYjwePN0ICxg4fG5PqHHDPp4IYBFNmLvU
+  default_config_hash: XNTdTrq2gRxySbScHlhhRooCtqHqv6-kn0iSvr1P2vc
 id: private_profile.field_dob_state
 field_name: field_dob_state
 entity_type: private_profile

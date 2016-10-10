@@ -76,7 +76,7 @@ class PrivateProfileForm extends ContentEntityForm {
             $homephone = $entity->field_homephone->value;
             $mobile = $entity->field_mobile->value;
             $role = $entity->field_role->value;
-            $certifications = $entity->field_certifications->value;
+            $certifications = $entity->field_certifications;
 
             // First set everything to blank
             $public_profile->field_image = NULL;

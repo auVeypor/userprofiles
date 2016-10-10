@@ -21,7 +21,7 @@ dependencies:
     - user
     - userprofiles
 _core:
-  default_config_hash: aPKDvn8GWf2X6mHWXOeRT2UIOYGNgdHRDPlC9Qei06s
+  default_config_hash: eKJHrrSC1vFiGUbmx9P-Rp9g4quZTAc1xFrrU2KBuzY
 id: public_profile.public_profile.default
 targetEntityType: public_profile
 bundle: public_profile

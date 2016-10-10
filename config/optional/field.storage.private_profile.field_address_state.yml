@@ -5,7 +5,7 @@ dependencies:
   module:
     - userprofiles
 _core:
-  default_config_hash: gvLwg_1UpWuFEFd5q3eSCtg4hL_m7mTZ2EXK_th2jtM
+  default_config_hash: QiZIgOyO_KwJ8iP0Xw2KxJrk6A1dEX__8etNC7i5WHA
 id: private_profile.field_address_state
 field_name: field_address_state
 entity_type: private_profile

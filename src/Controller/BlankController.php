@@ -9,6 +9,7 @@ use Drupal\Core\Entity;
 use Drupal\user\Entity\User;
 use Drupal\userprofiles\Entity\PrivateProfile;
 use Drupal\userprofiles\Entity\PublicProfile;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 
 class BlankController extends ControllerBase {
 	public function genblank() {
@@ -85,4 +86,15 @@ class BlankController extends ControllerBase {
 		}
 	}
 
+	//this + the route creates a static link for a redirection to any current user edit page.
+	public function accessProfileLink() {
+		global $base_url;
+
+		$user = User::load(\Drupal::currentUser()->id());
+		$private_profile = $user->field_privref->entity;
+
+		$url = $base_url . "/profile/" . $private_profile->id() . "/edit/";
+		$response = new RedirectResponse($url);
+    	$response->send();
+	}
 }

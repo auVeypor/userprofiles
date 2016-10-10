@@ -5,7 +5,7 @@ dependencies:
   module:
     - userprofiles
 _core:
-  default_config_hash: bygaTSNNGjCWu4rjMJfU3ahg5zo44K0c6V5akH4QBRo
+  default_config_hash: BjRY9dZmyc0MWXUQRuN-mRz1z79jx7876ETD9NiRvGc
 id: public_profile.field_homephone
 field_name: field_homephone
 entity_type: public_profile
